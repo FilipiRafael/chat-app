@@ -11,8 +11,8 @@ const Stack = createNativeStackNavigator();
 export default function AppRoutes() {
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{ headerShown: false }}>
-        <Stack.Screen name='Login' component={Login} />
+      <Stack.Navigator>
+        <Stack.Screen name='Login' component={Login} options={{ headerShown: false }} />
         <Stack.Screen name='Chat' component={Chat} />
       </Stack.Navigator>
     </NavigationContainer>

@@ -4,7 +4,13 @@ import { GiftedChat } from 'react-native-gifted-chat'
 import { useCallback, useEffect, useState } from "react";
 
 //importação do firebase e database
-import { collection, addDoc,onSnapshot, query,orderBy } from "firebase/firestore";
+import {
+    collection,
+    addDoc,
+    onSnapshot,
+    query,
+    orderBy
+} from "firebase/firestore";
 import { database } from "../config/firebase";
 
 export default function Chat() {
